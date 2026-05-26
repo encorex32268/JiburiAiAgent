@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ghibli Garden</string>
+    <string name="error_no_internet">No internet connection. Please check your network status.</string>
+    <string name="error_timeout">Connection timed out. Please try again later.</string>
+    <string name="error_unauthorized">Unauthorized access.</string>
+    <string name="error_forbidden">Server rejected the request.</string>
+    <string name="error_not_found">Requested resource not found.</string>
+    <string name="error_server">Internal server error. Please try again later.</string>
+    <string name="error_serialization">Data parsing failed.</string>
+    <string name="error_unknown">An unknown error occurred. Please try again.</string>
+    <string name="error_disk_full">Disk space is full. Unable to write cache.</string>
+    <string name="error_database_unknown">Local database error. Unable to read cache.</string>
+</resources>
