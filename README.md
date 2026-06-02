@@ -62,6 +62,23 @@ Experience the rich fantasy atmosphere of Studio Ghibli through our carefully cr
 - **Kotlinx Coroutines & Serialization**: Fast JSON handling and multi-threaded reactive flows.
 - **Coil (2.6.0)**: Image loading with fading and memory caching.
 - **Type-Safe Compose Navigation**: Safe navigation routing via Kotlin `@Serializable` objects.
+- **Journeys JUnit Engine (0.3.0)**: XML-driven automated user journey testing for Android.
+
+---
+
+## 🛡️ Automated Journey Testing
+
+We implement **Automated Journey Testing** using the `Journeys JUnit Engine` to ensure critical user paths remain functional and consistent across updates. These tests simulate real user interactions and verify state transitions throughout the app.
+
+<p align="center">
+  <img src="screenshots/journeysTest_screenshot.png" width="80%" alt="Journey Test Execution" />
+</p>
+
+### 🛣️ Defined Journeys:
+- **🔍 Movie Search Journey**: Validates the end-to-end flow from the home screen, through the search tab, to the movie detail page.
+- **❤️ Watchlist Journey**: Verifies that adding and removing movies from the watchlist correctly persists data and updates the UI.
+- **📂 Category Switch Journey**: Ensures smooth transitions and correct data filtering when switching between movie categories.
+- **🔄 State Consistency Journey**: Checks if the app maintains its state (e.g., search results, scroll positions) during navigation or configuration changes.
 
 ---
 

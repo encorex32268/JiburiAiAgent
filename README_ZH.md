@@ -64,6 +64,23 @@
 - **Kotlinx Coroutines & Serialization**：處理高併發非同步資料流，並以極速完成 JSON 序列化與反序列化。
 - **Coil (2.6.0)**：基於協程的現代化 Android 圖片載入庫，支援優雅的漸現與緩存機制。
 - **Type-Safe Compose Navigation**：使用 Kotlin 序列化（Serializable）安全定義路由物件，免除字串路徑的拼寫錯誤風險。
+- **Journeys JUnit Engine (0.3.0)**：基於 XML 定義的 Android 自動化使用者旅程測試。
+
+---
+
+## 🛡️ 自動化旅程測試 (Automated Journey Testing)
+
+我們採用 `Journeys JUnit Engine` 實作 **自動化旅程測試**，確保關鍵的使用者路徑在每一次更新中都能保持功能完備且一致。這些測試模擬真實的使用者互動，並驗證整個應用程式中的狀態轉換。
+
+<p align="center">
+  <img src="screenshots/journeysTest_screenshot.png" width="80%" alt="旅程測試執行畫面" />
+</p>
+
+### 🛣️ 已定義的測試旅程：
+- **🔍 電影搜尋旅程 (Movie Search Journey)**：驗證從首頁進入搜尋頁面、輸入關鍵字到進入電影詳情頁的完整流程。
+- **❤️ 收藏清單旅程 (Watchlist Journey)**：驗證將電影加入與移除收藏清單時，資料是否正確持久化並即時更新 UI。
+- **📂 分類切換旅程 (Category Switch Journey)**：確保在不同電影分類間切換時，畫面能平滑過度且資料正確過濾。
+- **🔄 狀態一致性旅程 (State Consistency Journey)**：檢查在導航或配置變更（如螢幕旋轉）時，應用程式是否能維持其狀態（如搜尋結果、滾動位置）。
 
 ---
 
