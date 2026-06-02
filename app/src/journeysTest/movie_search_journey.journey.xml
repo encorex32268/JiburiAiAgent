@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<journey name="Search and View Movie Details">
+    <description xml:space="preserve">Tests the search functionality by searching for a specific movie and navigating to its details screen.</description>
+    <actions xml:space="preserve">
+        <action>Wait for the app to load and ensure the home screen is visible.</action>
+        <action>Tap on the "Search" tab in the bottom navigation bar.</action>
+        <action>Verify that the search input field is displayed.</action>
+        <action>Ensure the search bar is focused. If the keyboard is in Chinese mode, find the language switch button (usually a globe icon or "EN" key) on the virtual keyboard and tap it to switch to English. Then, type "Totoro" into the search bar.</action>
+        <action>Wait for the search results to appear.</action>
+        <action>Tap on the movie card for "My Neighbor Totoro" in the search results.</action>
+        <action>Verify that the Movie Detail screen is displayed.</action>
+        <action>Check if the movie title "My Neighbor Totoro" is visible in the header.</action>
+        <action>Go back to the search screen.</action>
+    </actions>
+</journey>

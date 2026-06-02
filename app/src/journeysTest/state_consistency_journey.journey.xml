@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<journey name="Cross-Tab State Consistency">
+    <description xml:space="preserve">Ensures that the watchlist status of a movie is consistent across Home, Search, and Watchlist screens.</description>
+    <actions xml:space="preserve">
+        <action>Wait for the app to load and ensure the "Ghibli Garden" home screen is visible.</action>
+        <action>Locate the "Explore Films" grid. Tap on the very first movie card you see in that grid.</action>
+        <action>Once on the details screen, note the EXACT movie title (e.g., "Castle in the Sky"). We will call this the 'Selected Movie'.</action>
+        <action>Tap the "Add to Watchlist" button. Wait a moment and confirm the button now says "In Watchlist".</action>
+        <action>Tap the "Search" tab in the bottom navigation bar to switch screens directly.</action>
+        <action>Type the EXACT 'Selected Movie' title into the search bar. Wait for the results.</action>
+        <action>Look for the movie result that EXACTLY matches the 'Selected Movie' title and tap it.</action>
+        <action>On this detail screen, verify that the button already shows "In Watchlist". This confirms the state was synced.</action>
+        <action>Tap the "In Watchlist" button to remove it. Verify it changes back to "Add to Watchlist".</action>
+        <action>Tap the "Watchlist" tab in the bottom navigation bar.</action>
+        <action>Verify that the 'Selected Movie' title is no longer present in the watchlist list.</action>
+    </actions>
+</journey>

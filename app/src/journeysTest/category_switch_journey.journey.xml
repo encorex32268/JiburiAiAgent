@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<journey name="Switch Movie Categories">
+    <description xml:space="preserve">Tests the filtering logic by switching between Ghibli movie genres (e.g., All, Fantasy, Drama) and verifying the content changes.</description>
+    <actions xml:space="preserve">
+        <action>Wait for the app to load and ensure the "Ghibli Garden" home screen is visible.</action>
+        <action>Scroll down slightly until the category tabs (e.g., "All", "Fantasy", "Drama", "Adventure", "Family") are visible.</action>
+        <action>Verify that the "All" tab is selected by default (it should have a different background color).</action>
+        <action>Note the title of the first movie in the grid under the "All" category.</action>
+        <action>Tap on the "Fantasy" tab.</action>
+        <action>Wait for the movie grid to refresh. The screen might show a quick transition animation.</action>
+        <action>Verify that the movies now displayed are filtered. If "Castle in the Sky" or "My Neighbor Totoro" appears, it's likely correct for Fantasy.</action>
+        <action>Tap on the "Drama" tab.</action>
+        <action>Verify that the movie list updates to show Drama films like "Grave of the Fireflies".</action>
+        <action>Tap back on the "All" tab and ensure the full list of movies is displayed again.</action>
+    </actions>
+</journey>

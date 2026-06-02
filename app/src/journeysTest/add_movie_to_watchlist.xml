@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<journey name="Add Movie to Watchlist">
+    <description xml:space="preserve">Tests the flow of selecting a movie and adding it to the user's watchlist.</description>
+    <actions xml:space="preserve">
+        <action>Wait for the app to load and ensure the title "Ghibli Garden" is visible.</action>
+        <action>Tap on the first movie card in the list.</action>
+        <action>Verify that the "Add to Watchlist" button is displayed at the bottom.</action>
+        <action>Tap the "Add to Watchlist" button.</action>
+        <action>Verify that the button text changes to "In Watchlist".</action>
+        <action>Go back to the home screen.</action>
+        <action>Tap on the "Watchlist" tab in the bottom navigation bar.</action>
+        <action>Verify that the selected movie appears in the watchlist.</action>
+    </actions>
+</journey>
